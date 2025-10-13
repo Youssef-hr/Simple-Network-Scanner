@@ -13,7 +13,7 @@ A simple network scanner using Pyhton's scapy library
 ### Requirements
 - Python 3.10+
 - Scapy (`pip install -r requirements.txt`)
-- Root privileges for ARP and SYN scanning (use `sudo`)
+- Root privileges for ARP and SYN scanning (use sudo)
 
 ### Install
 ```bash
@@ -55,7 +55,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-# Test CLI (no root needed)
+# Test CLI (no root required)
 python3 scanner.py --help
 
 # Example scan (needs root)
