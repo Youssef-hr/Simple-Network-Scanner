@@ -1,5 +1,5 @@
 # Simple-Network-Scanner
-A simple network scanner using Pyhton's socket library
+A simple network scanner using Pyhton's scapy library
 ## Network Scanner (Scapy)
 
 - Simple ARP sweep with optional TCP SYN scan, built with Scapy. Great as a minimal example project.
