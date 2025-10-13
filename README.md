@@ -47,7 +47,7 @@ sudo /full/path/to/venv/python scanner.py 192.168.1.0/24 --iface eth0 --tcp-port
     `source .venv/bin/activate && sudo -E "$(which python3)" scanner.py 127.0.0.1/32 --no-arp --tcp-ports 80`
 - If `python` is missing or points to v2, always use `python3`.
 
-### Quickstart (copy/paste)
+### Quickstart
 ```bash
 git clone <your-repo-url> network-scanner-scapy
 cd network-scanner-scapy
@@ -62,8 +62,11 @@ python3 scanner.py --help
 sudo "$(pwd)"/.venv/bin/python scanner.py 192.168.1.0/24 --tcp-ports 22,80,443
 ```
 
-### WSL note
+### WSL Note
 - I worked on WSL so I'd like to add that on WSL the commands above work the same. If scanning your LAN, ensure your WSL distro has access to your network interface and you run with `sudo`.
+
+### Final Note
+- If you prefer to not use venv it is uneccessary, just make sure everything is installed and defined properly in whatever enviroment you're using
 
 ### Legal and Ethical Notice
 Only scan networks you own or have explicit permission to test.
