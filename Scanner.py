@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 import argparse
 import ipaddress
@@ -33,7 +34,7 @@ def arp_sweep(cidr: str, iface: str | None, timeout: float) -> List[Tuple[str, s
 	scapy = lazy_import_scapy()
 	ether = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
 	arp = scapy.ARP(pdst=cidr)
-	packet = tether / arp
+	packet = ether / arp
 	answered, _ = scapy.srp(packet, timeout=timeout, iface=iface, verbose=False)
 	results: List[Tuple[str, str]] = []
 	for snd, rcv in answered:
