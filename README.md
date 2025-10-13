@@ -2,8 +2,8 @@
 A simple network scanner using Pyhton's socket library
 ## Network Scanner (Scapy)
 
-Simple ARP sweep with optional TCP SYN scan, built with Scapy. Great as a minimal example project.
-
+- Simple ARP sweep with optional TCP SYN scan, built with Scapy. Great as a minimal example project.
+- I'd advise you to use Nmap or Metasploit throughout the resconissance process, this is a learning project 
 ### Features
 - ARP sweep across a CIDR (e.g., `192.168.1.0/24`)
 - Optional TCP SYN scan for specified ports
